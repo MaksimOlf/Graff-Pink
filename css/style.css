@@ -98,7 +98,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
-  background-image: url("../../img/jpg/font.jpg");
+  background-image: url("../img/jpg/font.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
