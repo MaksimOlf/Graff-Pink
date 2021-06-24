@@ -1,0 +1,130 @@
+.footer {
+	flex: 0 0 auto;
+	background-color: #262623;
+	background-size: cover;
+	&__row {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		text-align: start;
+		padding: 35px 0;
+	}
+	&__menu {
+		padding-right: 10px;
+	}
+	&__menu:last-child {
+		padding-right: 0px;
+	}
+	&__menu-title {
+		font-size: 21px;
+		line-height: 22px;
+		font-weight: 300;
+		color: #aeaeae;
+		white-space: nowrap;
+		margin-bottom: 20px;
+	}
+	&__menu-list {
+	}
+	&__menu-list li{
+		margin-bottom: 3px;
+	}
+	&__menu-list li a{
+		font-size: 15px;
+		line-height: 22px;
+		font-weight: 300;
+		color: #8b8b8b;
+	}
+	&__menu-list li a:hover{
+		font-size: 15px;
+		line-height: 22px;
+		font-weight: 300;
+		text-decoration: underline;
+		color: #fff;
+	}
+	&__social {
+		padding-top: 20px;
+	}
+	&__social-icons {
+		display: flex;
+		flex-direction: row;
+		justify-content: start;
+	}
+	&__social-link {
+		position: relative;
+		margin-right: 30px;
+		width: 52px;
+		height: 52px;
+		border-radius: 50%;
+		background-color: #696b6a;
+	}
+	&__social-link:hover {
+		background-color: #fff;
+	}
+	&__social-link:last-child {
+		margin-right: 10px;
+	}
+	&__social-link img{
+		position: absolute;
+		top:50%;
+		left:50%;
+		transform: translate(-50%, -50%);
+		z-index: 2;
+	}
+	&__copyright {
+		font-size: 15px;
+		line-height: 22px;
+		font-weight: 300;
+		color: #8b8b8b;
+		margin: 30px 0 0 0;
+	}
+	&__copyright a{
+		font-size: 17px;
+		line-height: 22px;
+		color: #8b8b8b;
+	}
+	&__copyright a:hover{
+		color: #fff;
+		text-decoration: underline;
+	}
+}
+
+@media (max-width: 736px) {
+	.footer {
+		&__social-icons {
+			flex-wrap: wrap;
+		}
+		&__social-link {
+			margin: 0 20px 10px 0px;
+		}
+	}
+}
+
+@media (max-width: 596px) {
+	.footer {
+		&__social-link {
+			margin: 0 5px 5px 0px;
+		}
+		&__row {
+			flex-wrap: wrap;
+			justify-content: center;
+			padding: 25px 0;
+		}
+		&__copyright {
+			font-size: 11px;
+			line-height: 11px;
+			font-weight: 300;
+			margin: 15px 0 0 0;
+		}
+	}
+}
+
+@media (max-width: 446px) {
+	.footer {
+		&__menu {
+			flex: 0 1 45%;
+		}
+		&__social {
+			flex: 0 1 45%;
+		}
+	}
+}
